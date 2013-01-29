@@ -124,7 +124,7 @@
       str = "var encodeHTML=(" + encodeHTMLSource.toString() + "());" + str;
     }
     try {
-      if(/it\./g.test(str)) {
+      if(/it\.?/g.test(str)) {
         return new Function( c.varname, str );
       } else {
         return new Function( '', str );
